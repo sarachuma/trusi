@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арена Трусов - Зал Славы</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'BOU COLLEGIATE RUS';
+            src: url('fonts/Bou_Collegiate.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Geologica Local';
+            src: url('fonts/Geologica.ttf') format('truetype');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --bg-deep: #030624;         
+            --bg-velvet: #0C1E5B;       
+            --bg-sunset: #002daa;       
+            
+            --accent-light: #ff4d4d;      
+            --accent-main: #fe0000;       
+            --accent-dark: #741511;       
+            
+            --warm-star: #ffd700;       
+            --silver: #e0e0e0;
+            --bronze: #cd7f32;
+            
+            --text-main: #f0edf5;       
+            --text-muted: #8b9dc3;      
+            
+            --font-title: 'Geologica Local', 'Geologica', sans-serif;
+            --font-text: 'Geologica Local', 'Geologica', sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.8;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            background-image: url('background6.webp');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            color: var(--text-main);
+            font-family: var(--font-text);
+            margin: 0;
+            padding: 50px 20px;
+            min-height: 100vh;
+            overflow-x: hidden; 
+        }
+
+        .main-wrapper { display: flex; justify-content: center; align-items: stretch; width: 100%; }
+        .girl-col { width: 0; position: relative; z-index: 999; pointer-events: none; }
+        .sticky-box { position: sticky; top: 50vh; width: 0; height: 0; overflow: visible; }
+        .girl-img { position: absolute; height: 650px; top: -325px; filter: drop-shadow(0 15px 35px rgba(0,0,0,0.8)) contrast(1.1) brightness(0.9); }
+        .left-img { right: -210px; }
+        .right-img { left: -77px; }
+
+        @media (max-width: 1550px) { .girl-col { display: none; } }
+
+        .container {
+            width: 100%; max-width: 1200px; min-height: 80vh; 
+            background: rgba(3, 6, 36, 0.88); backdrop-filter: blur(20px); 
+            position: relative; box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(254, 0, 0, 0.15); 
+            border: 2px solid var(--accent-dark); border-radius: 4px; padding: 4px; 
+        }
+
+        .container::before {
+            content: ''; position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;
+            border: 1px solid rgba(254, 0, 0, 0.2); border-radius: 2px; pointer-events: none; z-index: 10;
+        }
+
+        .content-wrapper { background: transparent; position: relative; z-index: 2; height: 100%; border-radius: 2px; min-height: 80vh; }
+
+        .header {
+            padding: 35px 30px 25px; text-align: center; position: relative;
+            border-bottom: 2px solid rgba(254, 0, 0, 0.3); 
+            background: radial-gradient(circle at 50% 0%, rgba(254, 0, 0, 0.15) 0%, transparent 80%);
+        }
+        
+        .header-top h1 { 
+            font-family: var(--font-title); font-size: 52px; font-weight: 900; margin: 0;
+            position: relative; display: inline-block; color: #ffffff; text-transform: uppercase; letter-spacing: 2px;
+            text-shadow: -3px 0 var(--bg-sunset), 3px 0 var(--accent-main), 0 0 20px rgba(254, 0, 0, 0.5); 
+        }
+        .header-top h1::before, .header-top h1::after {
+            content: '⚔️'; display: inline-block; font-size: 32px; vertical-align: middle; margin: 0 15px;
+            color: var(--accent-main); filter: drop-shadow(0 0 8px rgba(254, 0, 0, 0.6)); 
+        }
+
+        .back-btn {
+            position: absolute; top: 20px; left: 30px; display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(254, 0, 0, 0.1); color: #ffffff; text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px var(--accent-main);
+            padding: 10px 20px; border: 1px solid rgba(254, 0, 0, 0.3); border-radius: 2px;
+            font-family: var(--font-title); font-weight: 700; font-size: 18px; transition: all 0.3s ease; z-index: 10;
+            text-decoration: none; 
+        }
+        .back-btn:hover { background: var(--accent-main); color: #ffffff; box-shadow: 0 0 20px rgba(254, 0, 0, 0.6); text-shadow: none; }
+
+        /* ================= ДВЕ КОЛОНКИ ================= */
+        .leaderboard-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .col-title {
+            text-align: center; font-family: var(--font-title); font-size: 32px; font-weight: 900;
+            text-transform: uppercase; margin-top: 0; margin-bottom: 25px; letter-spacing: 1px;
+            padding-bottom: 15px; border-bottom: 2px dashed rgba(254, 0, 0, 0.3);
+        }
+
+        .col-title.thieves { color: #00ff44; text-shadow: 2px 2px 0px #00661b, 0 0 15px rgba(0,255,68,0.5); }
+        .col-title.victims { color: var(--accent-light); text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px rgba(255,77,77,0.5); }
+
+        /* ================= ПЛАШКИ ИГРОКОВ ================= */
+        .list-item {
+            display: flex; align-items: center;
+            background: var(--bg-velvet); border: 2px solid var(--accent-dark); border-radius: 4px;
+            padding: 12px 20px; margin-bottom: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer; position: relative;
+        }
+        
+        .list-item:hover {
+            transform: translateX(10px); border-color: var(--accent-main);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8), 0 0 20px rgba(254,0,0,0.3);
+        }
+
+        .list-item::before {
+            content: ''; position: absolute; top: 3px; left: 3px; right: 3px; bottom: 3px;
+            border: 1px dashed rgba(254, 0, 0, 0.15); border-radius: 2px; pointer-events: none; z-index: 10;
+        }
+
+        .list-rank {
+            width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-title); font-size: 18px; font-weight: 900; margin-right: 15px;
+            border: 2px solid var(--accent-dark); background: var(--bg-deep); color: var(--text-main);
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8); z-index: 11;
+        }
+        .rank-1 { background: var(--warm-star); color: #130f1c; border-color: #fff; box-shadow: 0 0 15px var(--warm-star); text-shadow: none; }
+        .rank-2 { background: var(--silver); color: #130f1c; border-color: #fff; box-shadow: 0 0 15px var(--silver); text-shadow: none; }
+        .rank-3 { background: var(--bronze); color: #130f1c; border-color: #fff; box-shadow: 0 0 15px var(--bronze); text-shadow: none; }
+
+        .list-avatar {
+            width: 44px; height: 44px; border-radius: 4px; flex-shrink: 0;
+            background: var(--bg-deep); border: 2px solid var(--accent-main);
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-title); font-size: 22px; font-weight: 900;
+            color: #ffffff; margin-right: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); z-index: 11;
+        }
+
+        .list-info { flex-grow: 1; display: flex; flex-direction: column; overflow: hidden; z-index: 11; }
+        
+        .list-name-row { display: flex; align-items: center; gap: 8px; }
+        .list-name { 
+            font-family: var(--font-title); font-size: 24px; font-weight: 900; color: #fff; 
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; 
+            letter-spacing: 1px; margin: 0; line-height: 1.1;
+        }
+        .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); }
+
+        .list-score-box { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; z-index: 11; }
+        .list-score { font-family: var(--font-title); font-size: 36px; font-weight: 900; line-height: 1; }
+        .list-score-label { font-size: 11px; font-family: var(--font-title); color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-weight: 800; margin-top: 4px; }
+        
+        .score-green { color: #00ff44; text-shadow: 2px 2px 0px #00661b, 0 0 15px rgba(0,255,68,0.5); }
+        .score-red { color: var(--accent-light); text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px rgba(255,77,77,0.5); }
+
+        .text-3d-effect { color: #ffffff; text-shadow: 2px 2px 0px var(--accent-dark), 0 0 10px rgba(254, 0, 0, 0.8); }
+
+        .empty-state { text-align: center; padding: 40px 20px; font-family: var(--font-title); font-size: 20px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; border: 2px dashed rgba(254,0,0,0.2); border-radius: 4px; }
+
+        @media (max-width: 900px) { 
+            .leaderboard-container { grid-template-columns: 1fr; padding: 20px; gap: 30px; } 
+            .header-top h1 { font-size: 36px; }
+            .header-top h1::before, .header-top h1::after { display: none; }
+            .back-btn { position: relative; top: 0; left: 0; margin-bottom: 20px; }
+            .list-item:hover { transform: translateX(5px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    <div class="girl-col">
+        <div class="sticky-box"><img src="girl-left.png" class="girl-img left-img" alt=""></div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="header">
+                <a href="https://sarachuma.github.io/links/" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" style="filter: drop-shadow(2px 2px 0px var(--accent-dark));"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Назад
+                </a>
+                <div class="header-top"><h1>Зал Славы</h1></div>
+            </div>
+            
+            <div class="leaderboard-container">
+                <!-- КОЛОНКА ВОРОВ -->
+                <div>
+                    <h2 class="col-title thieves">👑 ТОП 10 ВОРОВ</h2>
+                    <div id="thieves-list"></div>
+                </div>
+
+                <!-- КОЛОНКА ЖЕРТВ -->
+                <div>
+                    <h2 class="col-title victims">🤡 ТОП 10 ЖЕРТВ</h2>
+                    <div id="victims-list"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="girl-col">
+        <div class="sticky-box"><img src="girl-right.png" class="girl-img right-img" alt=""></div>
+    </div>
+</div>
+
+<script>
+    function getInitials(name) { return (name || '?').replace('@', '').trim().substring(0, 1).toUpperCase(); }
+
+    async function loadData() {
+        try {
+            const response = await fetch('pants.json?t=' + new Date().getTime()); 
+            if (!response.ok) throw new Error();
+            const data = await response.json(); 
+            
+            let players = [];
+            for (const key in data) {
+                if (data.hasOwnProperty(key)) {
+                    players.push({
+                        username: data[key].Name || key,
+                        stolen: data[key].Stolen || 0,
+                        lost: data[key].Lost || 0,
+                        armor: data[key].Armor || false
+                    });
+                }
+            }
+            
+            // Фильтруем и сортируем ТОП 10 Воров (у кого stolen > 0)
+            const thieves = players.filter(p => p.stolen > 0).sort((a, b) => b.stolen - a.stolen).slice(0, 10);
+            
+            // Фильтруем и сортируем ТОП 10 Жертв (у кого lost > 0)
+            const victims = players.filter(p => p.lost > 0).sort((a, b) => b.lost - a.lost).slice(0, 10);
+
+            renderList('thieves-list', thieves, 'stolen');
+            renderList('victims-list', victims, 'lost');
+
+        } catch (error) {
+            document.getElementById('thieves-list').innerHTML = `<div class="empty-state">Ошибка загрузки базы</div>`;
+            document.getElementById('victims-list').innerHTML = `<div class="empty-state">Ошибка загрузки базы</div>`;
+        }
+    }
+
+    function renderList(containerId, list, type) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+
+        if (list.length === 0) {
+            container.innerHTML = `<div class="empty-state">Пока пусто</div>`;
+            return;
+        }
+
+        list.forEach((player, index) => {
+            const cleanNick = player.username;
+            
+            // Медали
+            let rankClass = '';
+            let rankNum = index + 1;
+            if (rankNum === 1) rankClass = 'rank-1';
+            else if (rankNum === 2) rankClass = 'rank-2';
+            else if (rankNum === 3) rankClass = 'rank-3';
+
+            const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
+            
+            // В зависимости от колонки берем нужную цифру и цвет
+            let score = type === 'stolen' ? player.stolen : player.lost;
+            let scoreClass = type === 'stolen' ? 'score-green' : 'score-red';
+            let scoreLabel = type === 'stolen' ? 'Трусов украл' : 'Трусов потерял';
+
+            const item = document.createElement('div');
+            item.className = 'list-item';
+            item.onclick = () => window.open(`https://twitch.tv/${cleanNick.replace('@', '')}`, '_blank');
+            
+            item.innerHTML = `
+                <div class="list-rank ${rankClass}">${rankNum}</div>
+                <div class="list-avatar">${getInitials(cleanNick)}</div>
+                
+                <div class="list-info">
+                    <div class="list-name-row">
+                        <h3 class="list-name text-3d-effect" title="${cleanNick}">${cleanNick}</h3>
+                        ${armorIcon}
+                    </div>
+                </div>
+
+                <div class="list-score-box">
+                    <span class="list-score ${scoreClass}">${score}</span>
+                    <span class="list-score-label">${scoreLabel}</span>
+                </div>
+            `;
+            container.appendChild(item);
+        });
+    }
+
+    loadData();
+</script>
+</body>
+</html>
