@@ -173,7 +173,6 @@
         
         .list-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* ИСПРАВЛЕНИЕ ТЕНИ: Убрали overflow: hidden; добавили min-width: 0 */
         .list-info { flex-grow: 1; display: flex; flex-direction: column; overflow: visible; z-index: 11; padding-right: 10px; min-width: 0; }
         
         .list-name-row { display: flex; align-items: center; gap: 8px; width: 100%; }
@@ -181,10 +180,10 @@
         .list-name-link {
             text-decoration: none; color: inherit; display: block; 
             max-width: calc(100% - 25px); 
-            /* ИСПРАВЛЕНИЕ ТЕНИ: Расширяем контейнер, чтобы тень влезла, и компенсируем маргином */
+            /* ИСПРАВЛЕНИЕ ТЕНИ ВО ВСЕ 4 СТОРОНЫ */
             overflow: hidden; 
-            padding: 20px 0; 
-            margin: -20px 0;
+            padding: 20px 15px; 
+            margin: -20px -15px;
         }
         
         .list-name { 
