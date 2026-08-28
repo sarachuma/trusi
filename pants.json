@@ -1,56 +1,20 @@
 {
   "madman1408": {
     "Name": "MadMan1408",
-    "Stolen": 19,
-    "Lost": 0,
-    "Armor": false,
-    "LastRobbery": "2026-08-25T15:44:36.1662691+04:00",
-    "SessionStolen": 0,
-    "SessionLost": 0
-  },
-  "madmanb0t": {
-    "Name": "MadManB0T",
-    "Stolen": 0,
-    "Lost": 6,
-    "Armor": false,
-    "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 0,
-    "SessionLost": 0
-  },
-  "wizebot": {
-    "Name": "WizeBot",
-    "Stolen": 0,
-    "Lost": 8,
-    "Armor": false,
-    "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 0,
-    "SessionLost": 0
-  },
-  "streamelements": {
-    "Name": "StreamElements",
     "Stolen": 0,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "0001-01-01T00:00:00",
+    "LastRobbery": "2026-08-28T13:08:23.7099931+03:00",
     "SessionStolen": 0,
-    "SessionLost": 0
+    "SessionLost": 1
   },
-  "sara": {
-    "Name": "sara",
-    "Stolen": 0,
+  "sarachuma": {
+    "Name": "sarachuma",
+    "Stolen": 1,
     "Lost": 0,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 0,
-    "SessionLost": 0
-  },
-  "cross_loss": {
-    "Name": "cross_loss",
-    "Stolen": 2,
-    "Lost": 2,
-    "Armor": false,
-    "LastRobbery": "2026-08-25T15:20:55.6215999+04:00",
-    "SessionStolen": 0,
+    "SessionStolen": 1,
     "SessionLost": 0
   }
 }
