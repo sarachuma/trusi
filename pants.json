@@ -10,11 +10,11 @@
   },
   "sarachuma": {
     "Name": "sarachuma",
-    "Stolen": 4,
+    "Stolen": 5,
     "Lost": 6,
     "Armor": false,
     "LastRobbery": "2026-08-28T18:23:02.2446863+03:00",
-    "SessionStolen": 1,
+    "SessionStolen": 2,
     "SessionLost": 0
   },
   "fall3n_ang3i": {
@@ -38,11 +38,11 @@
   "unomirv_": {
     "Name": "unomirv_",
     "Stolen": 0,
-    "Lost": 5,
+    "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:12:34.6955828+03:00",
+    "LastRobbery": "2026-08-28T18:36:21.1191434+03:00",
     "SessionStolen": 0,
-    "SessionLost": 1
+    "SessionLost": 3
   },
   "tsumicakes": {
     "Name": "TsumiCakes",
@@ -55,11 +55,11 @@
   },
   "rewolucifer": {
     "Name": "rewolucifer",
-    "Stolen": 4,
+    "Stolen": 5,
     "Lost": 4,
     "Armor": true,
-    "LastRobbery": "2026-08-28T17:42:30.856693+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-28T18:36:25.923232+03:00",
+    "SessionStolen": 1,
     "SessionLost": 0
   },
   "axideleya_prrr": {
