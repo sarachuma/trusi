@@ -1,21 +1,21 @@
 {
   "madman1408": {
     "Name": "MadMan1408",
-    "Stolen": 10,
+    "Stolen": 11,
     "Lost": 3,
     "Armor": true,
-    "LastRobbery": "2026-08-28T18:19:27.3718774+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-08-28T18:51:09.8397917+03:00",
+    "SessionStolen": 2,
     "SessionLost": 0
   },
   "sarachuma": {
     "Name": "sarachuma",
-    "Stolen": 5,
-    "Lost": 6,
+    "Stolen": 4,
+    "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:23:02.2446863+03:00",
+    "LastRobbery": "2026-08-28T18:45:09.8034324+03:00",
     "SessionStolen": 2,
-    "SessionLost": 0
+    "SessionLost": 1
   },
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
@@ -38,11 +38,11 @@
   "unomirv_": {
     "Name": "unomirv_",
     "Stolen": 0,
-    "Lost": 7,
+    "Lost": 8,
     "Armor": false,
     "LastRobbery": "2026-08-28T18:36:21.1191434+03:00",
     "SessionStolen": 0,
-    "SessionLost": 3
+    "SessionLost": 4
   },
   "tsumicakes": {
     "Name": "TsumiCakes",
@@ -58,7 +58,7 @@
     "Stolen": 5,
     "Lost": 4,
     "Armor": true,
-    "LastRobbery": "2026-08-28T18:36:25.923232+03:00",
+    "LastRobbery": "2026-08-28T19:02:57.4402412+03:00",
     "SessionStolen": 1,
     "SessionLost": 0
   },
@@ -73,11 +73,11 @@
   },
   "vermeerm": {
     "Name": "vermeerm",
-    "Stolen": 1,
+    "Stolen": 2,
     "Lost": 3,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:18:38.2541941+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-08-28T19:03:04.2329094+03:00",
+    "SessionStolen": 2,
     "SessionLost": 0
   },
   "pollux2292": {
@@ -154,11 +154,11 @@
   },
   "serrrg0": {
     "Name": "SeRRRg0",
-    "Stolen": 3,
+    "Stolen": 4,
     "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:29:49.4146332+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-28T18:45:40.1269017+03:00",
+    "SessionStolen": 1,
     "SessionLost": 2
   },
   "kiir0yy": {
@@ -218,10 +218,19 @@
   "cybercat26v": {
     "Name": "CyberCat26V",
     "Stolen": 0,
-    "Lost": 0,
+    "Lost": 2,
     "Armor": false,
     "LastRobbery": "2026-08-28T18:31:58.2371486+03:00",
     "SessionStolen": 0,
+    "SessionLost": 2
+  },
+  "foxi_voxi": {
+    "Name": "foxi_voxi",
+    "Stolen": 1,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 1,
     "SessionLost": 0
   }
 }
