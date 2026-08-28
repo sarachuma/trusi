@@ -1,20 +1,56 @@
 {
   "madman1408": {
     "Name": "MadMan1408",
-    "Stolen": 0,
+    "Stolen": 5,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-08-28T13:08:23.7099931+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-28T16:00:25.9925757+03:00",
+    "SessionStolen": 5,
     "SessionLost": 1
   },
   "sarachuma": {
     "Name": "sarachuma",
     "Stolen": 1,
-    "Lost": 0,
+    "Lost": 1,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 1,
+    "SessionLost": 1
+  },
+  "fall3n_ang3i": {
+    "Name": "fall3n_ang3I",
+    "Stolen": 1,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:00:01.6856576+03:00",
+    "SessionStolen": 1,
+    "SessionLost": 0
+  },
+  "mellorian": {
+    "Name": "Mellorian",
+    "Stolen": 0,
+    "Lost": 5,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 5
+  },
+  "unomirv_": {
+    "Name": "unomirv_",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:01:00.0631539+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0
+  },
+  "tsumicakes": {
+    "Name": "TsumiCakes",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:01:55.9294252+03:00",
+    "SessionStolen": 0,
     "SessionLost": 0
   }
 }
