@@ -1,12 +1,12 @@
 {
   "madman1408": {
     "Name": "MadMan1408",
-    "Stolen": 5,
-    "Lost": 1,
+    "Stolen": 6,
+    "Lost": 2,
     "Armor": false,
-    "LastRobbery": "2026-08-28T16:00:25.9925757+03:00",
-    "SessionStolen": 5,
-    "SessionLost": 1
+    "LastRobbery": "2026-08-28T16:32:16.1025872+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0
   },
   "sarachuma": {
     "Name": "sarachuma",
@@ -14,12 +14,12 @@
     "Lost": 1,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 1,
-    "SessionLost": 1
+    "SessionStolen": 0,
+    "SessionLost": 0
   },
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
-    "Stolen": 1,
+    "Stolen": 2,
     "Lost": 0,
     "Armor": false,
     "LastRobbery": "2026-08-28T16:00:01.6856576+03:00",
@@ -33,14 +33,14 @@
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 5
+    "SessionLost": 0
   },
   "unomirv_": {
     "Name": "unomirv_",
     "Stolen": 0,
-    "Lost": 0,
-    "Armor": false,
-    "LastRobbery": "2026-08-28T16:01:00.0631539+03:00",
+    "Lost": 1,
+    "Armor": true,
+    "LastRobbery": "2026-08-28T16:16:57.4929946+03:00",
     "SessionStolen": 0,
     "SessionLost": 0
   },
@@ -52,5 +52,41 @@
     "LastRobbery": "2026-08-28T16:01:55.9294252+03:00",
     "SessionStolen": 0,
     "SessionLost": 0
+  },
+  "rewolucifer": {
+    "Name": "rewolucifer",
+    "Stolen": 2,
+    "Lost": 0,
+    "Armor": true,
+    "LastRobbery": "2026-08-28T16:04:03.8240968+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0
+  },
+  "axideleya_prrr": {
+    "Name": "Axideleya_prrr",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:06:25.6542405+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0
+  },
+  "vermeerm": {
+    "Name": "vermeerm",
+    "Stolen": 0,
+    "Lost": 1,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:21:46.4127429+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0
+  },
+  "pollux2292": {
+    "Name": "pollux2292",
+    "Stolen": 0,
+    "Lost": 1,
+    "Armor": false,
+    "LastRobbery": "2026-08-28T16:27:38.4515598+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 1
   }
 }
