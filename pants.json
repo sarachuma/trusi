@@ -2,11 +2,11 @@
   "madman1408": {
     "Name": "MadMan1408",
     "Stolen": 21,
-    "Lost": 10,
+    "Lost": 11,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:28:04.4569358+03:00",
+    "LastRobbery": "2026-08-30T18:14:17.8510883+03:00",
     "SessionStolen": 3,
-    "SessionLost": 1,
+    "SessionLost": 2,
     "Breaker": true
   },
   "sarachuma": {
@@ -21,11 +21,11 @@
   },
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
-    "Stolen": 2,
+    "Stolen": 3,
     "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-28T19:38:08.1408851+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-30T18:04:38.3613318+03:00",
+    "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -41,12 +41,12 @@
   },
   "unomirv_": {
     "Name": "unomirv_",
-    "Stolen": 15,
-    "Lost": 14,
+    "Stolen": 16,
+    "Lost": 16,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:51:10.0258612+03:00",
-    "SessionStolen": 3,
-    "SessionLost": 1,
+    "LastRobbery": "2026-08-30T18:06:11.9823581+03:00",
+    "SessionStolen": 4,
+    "SessionLost": 3,
     "Breaker": false
   },
   "tsumicakes": {
@@ -62,11 +62,11 @@
   "rewolucifer": {
     "Name": "rewolucifer",
     "Stolen": 7,
-    "Lost": 8,
+    "Lost": 11,
     "Armor": false,
     "LastRobbery": "2026-08-28T20:11:42.0202479+03:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 3,
     "Breaker": false
   },
   "axideleya_prrr": {
@@ -91,11 +91,11 @@
   },
   "pollux2292": {
     "Name": "pollux2292",
-    "Stolen": 4,
+    "Stolen": 5,
     "Lost": 6,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:51:19.546522+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-30T18:08:47.4548035+03:00",
+    "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -171,11 +171,11 @@
   },
   "serrrg0": {
     "Name": "SeRRRg0",
-    "Stolen": 6,
+    "Stolen": 7,
     "Lost": 13,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:51:51.4671956+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-08-30T18:09:30.1311839+03:00",
+    "SessionStolen": 2,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -311,11 +311,11 @@
   },
   "neptuneskiss_": {
     "Name": "NeptunesKiss_",
-    "Stolen": 6,
+    "Stolen": 8,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:02:21.7479505+03:00",
-    "SessionStolen": 2,
+    "LastRobbery": "2026-08-30T18:05:37.9896487+03:00",
+    "SessionStolen": 4,
     "SessionLost": 1,
     "Breaker": true
   },
