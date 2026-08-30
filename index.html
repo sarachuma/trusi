@@ -116,7 +116,7 @@
         }
         .back-btn:hover { background: var(--accent-main); color: #ffffff; box-shadow: 0 0 20px rgba(254, 0, 0, 0.6); text-shadow: none; }
 
-        /* ================= ДВЕ КОЛОНКИ ================= */
+       
         .leaderboard-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -133,7 +133,7 @@
         .col-title.thieves { color: #00ff44; text-shadow: 2px 2px 0px #00661b, 0 0 15px rgba(0,255,68,0.5); }
         .col-title.victims { color: var(--accent-light); text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px rgba(255,77,77,0.5); }
 
-        /* ================= ПЛАШКИ ИГРОКОВ ================= */
+        
         .list-item {
             display: flex; align-items: center;
             background: var(--bg-velvet); border: 2px solid var(--accent-dark); border-radius: 4px;
@@ -180,7 +180,7 @@
         .list-name-link {
             text-decoration: none; color: inherit; display: block; 
             max-width: calc(100% - 25px); 
-            /* ИСПРАВЛЕНИЕ ТЕНИ ВО ВСЕ 4 СТОРОНЫ */
+            
             overflow: hidden; 
             padding: 20px 15px; 
             margin: -20px -15px;
@@ -197,7 +197,7 @@
 
         .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
 
-        /* ================= 3D БЛОКИ ДЛЯ ЦИФР ================= */
+      
         .list-score-box { 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
             z-index: 11; width: 115px; flex-shrink: 0; 
@@ -294,13 +294,13 @@
             </div>
             
             <div class="leaderboard-container">
-                <!-- КОЛОНКА ВОРОВ -->
+                
                 <div>
                     <h2 class="col-title thieves">👑 ТОП 10 ВОРОВ</h2>
                     <div id="thieves-list"></div>
                 </div>
 
-                <!-- КОЛОНКА ЖЕРТВ -->
+                
                 <div>
                     <h2 class="col-title victims">🤡 ТОП 10 ЖЕРТВ</h2>
                     <div id="victims-list"></div>
