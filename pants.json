@@ -44,7 +44,7 @@
     "Stolen": 19,
     "Lost": 16,
     "Armor": false,
-    "LastRobbery": "2026-08-30T19:51:43.8864786+03:00",
+    "LastRobbery": "2026-08-30T20:16:06.6635326+03:00",
     "SessionStolen": 7,
     "SessionLost": 3,
     "Breaker": false
@@ -64,7 +64,7 @@
     "Stolen": 8,
     "Lost": 11,
     "Armor": true,
-    "LastRobbery": "2026-08-30T19:06:43.3228143+03:00",
+    "LastRobbery": "2026-08-30T20:21:46.5933934+03:00",
     "SessionStolen": 1,
     "SessionLost": 3,
     "Breaker": false
@@ -92,11 +92,11 @@
   "pollux2292": {
     "Name": "pollux2292",
     "Stolen": 7,
-    "Lost": 6,
+    "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-30T19:45:27.6587125+03:00",
+    "LastRobbery": "2026-08-30T20:22:04.0442541+03:00",
     "SessionStolen": 3,
-    "SessionLost": 1,
+    "SessionLost": 2,
     "Breaker": false
   },
   "hihannya": {
@@ -171,11 +171,11 @@
   },
   "serrrg0": {
     "Name": "SeRRRg0",
-    "Stolen": 9,
+    "Stolen": 10,
     "Lost": 17,
     "Armor": false,
-    "LastRobbery": "2026-08-30T19:45:21.5382215+03:00",
-    "SessionStolen": 4,
+    "LastRobbery": "2026-08-30T20:22:31.1392119+03:00",
+    "SessionStolen": 5,
     "SessionLost": 5,
     "Breaker": false
   },
@@ -311,11 +311,11 @@
   },
   "neptuneskiss_": {
     "Name": "NeptunesKiss_",
-    "Stolen": 10,
+    "Stolen": 11,
     "Lost": 4,
     "Armor": false,
-    "LastRobbery": "2026-08-30T19:46:34.0991074+03:00",
-    "SessionStolen": 6,
+    "LastRobbery": "2026-08-30T20:15:10.0101135+03:00",
+    "SessionStolen": 7,
     "SessionLost": 4,
     "Breaker": true
   },
@@ -382,11 +382,11 @@
   "wild_woofy": {
     "Name": "wild_woofy",
     "Stolen": 0,
-    "Lost": 1,
+    "Lost": 2,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 1,
+    "SessionLost": 2,
     "Breaker": false
   },
   "ogun173": {
@@ -447,6 +447,16 @@
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
     "SessionLost": 2,
+    "Breaker": false
+  },
+  "eclipsesss12": {
+    "Name": "eclipsesss12",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
     "Breaker": false
   }
 }
