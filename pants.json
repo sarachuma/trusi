@@ -11,21 +11,21 @@
   },
   "sarachuma": {
     "Name": "sarachuma",
-    "Stolen": 8,
+    "Stolen": 9,
     "Lost": 13,
     "Armor": false,
-    "LastRobbery": "2026-08-30T17:45:25.0703214+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-08-30T18:33:55.1946731+03:00",
+    "SessionStolen": 2,
     "SessionLost": 0,
     "Breaker": true
   },
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
-    "Stolen": 3,
+    "Stolen": 4,
     "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-30T18:04:38.3613318+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-08-30T18:54:27.9666953+03:00",
+    "SessionStolen": 2,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -44,18 +44,18 @@
     "Stolen": 16,
     "Lost": 16,
     "Armor": false,
-    "LastRobbery": "2026-08-30T18:06:11.9823581+03:00",
+    "LastRobbery": "2026-08-30T18:54:23.9015781+03:00",
     "SessionStolen": 4,
     "SessionLost": 3,
     "Breaker": false
   },
   "tsumicakes": {
     "Name": "TsumiCakes",
-    "Stolen": 3,
+    "Stolen": 4,
     "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-30T16:49:09.0137623+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-08-30T18:45:08.4797386+03:00",
+    "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -94,7 +94,7 @@
     "Stolen": 5,
     "Lost": 6,
     "Armor": false,
-    "LastRobbery": "2026-08-30T18:08:47.4548035+03:00",
+    "LastRobbery": "2026-08-30T18:55:15.5317412+03:00",
     "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
@@ -172,11 +172,11 @@
   "serrrg0": {
     "Name": "SeRRRg0",
     "Stolen": 7,
-    "Lost": 13,
+    "Lost": 14,
     "Armor": false,
     "LastRobbery": "2026-08-30T18:09:30.1311839+03:00",
     "SessionStolen": 2,
-    "SessionLost": 1,
+    "SessionLost": 2,
     "Breaker": false
   },
   "kiir0yy": {
@@ -212,11 +212,11 @@
   "͏": {
     "Name": "͏",
     "Stolen": 2,
-    "Lost": 5,
+    "Lost": 6,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "johnathan_beast": {
@@ -314,7 +314,7 @@
     "Stolen": 8,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-08-30T18:05:37.9896487+03:00",
+    "LastRobbery": "2026-08-30T18:44:38.2631322+03:00",
     "SessionStolen": 4,
     "SessionLost": 1,
     "Breaker": true
@@ -354,7 +354,7 @@
     "Stolen": 1,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-08-30T16:32:23.6178918+03:00",
+    "LastRobbery": "2026-08-30T18:36:05.0869441+03:00",
     "SessionStolen": 0,
     "SessionLost": 0,
     "Breaker": false
@@ -382,11 +382,11 @@
   "wild_woofy": {
     "Name": "wild_woofy",
     "Stolen": 0,
-    "Lost": 0,
+    "Lost": 1,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "ogun173": {
