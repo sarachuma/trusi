@@ -12,11 +12,11 @@
   "sarachuma": {
     "Name": "sarachuma",
     "Stolen": 13,
-    "Lost": 20,
+    "Lost": 22,
     "Armor": false,
     "LastRobbery": "2026-09-01T22:24:30.0071773+03:00",
     "SessionStolen": 2,
-    "SessionLost": 5,
+    "SessionLost": 7,
     "Breaker": false
   },
   "fall3n_ang3i": {
@@ -61,13 +61,13 @@
   },
   "rewolucifer": {
     "Name": "rewolucifer",
-    "Stolen": 17,
+    "Stolen": 18,
     "Lost": 13,
     "Armor": true,
-    "LastRobbery": "2026-09-01T23:55:18.8017995+03:00",
-    "SessionStolen": 6,
+    "LastRobbery": "2026-09-02T00:37:33.1704897+03:00",
+    "SessionStolen": 7,
     "SessionLost": 2,
-    "Breaker": false
+    "Breaker": true
   },
   "axideleya_prrr": {
     "Name": "Axideleya_prrr",
@@ -131,11 +131,11 @@
   },
   "juvis_nen": {
     "Name": "juvis_nen",
-    "Stolen": 1,
+    "Stolen": 2,
     "Lost": 12,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:23:45.4100926+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-09-02T01:00:34.7026045+03:00",
+    "SessionStolen": 1,
     "SessionLost": 0,
     "Breaker": false
   },
@@ -162,21 +162,21 @@
   "mira_noire": {
     "Name": "Mira_Noire",
     "Stolen": 15,
-    "Lost": 2,
+    "Lost": 3,
     "Armor": false,
-    "LastRobbery": "2026-08-28T18:19:32.1877309+03:00",
+    "LastRobbery": "2026-09-02T00:46:02.4196882+03:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "serrrg0": {
     "Name": "SeRRRg0",
-    "Stolen": 14,
-    "Lost": 19,
-    "Armor": false,
-    "LastRobbery": "2026-09-01T23:41:23.4586162+03:00",
-    "SessionStolen": 3,
-    "SessionLost": 1,
+    "Stolen": 15,
+    "Lost": 20,
+    "Armor": true,
+    "LastRobbery": "2026-09-02T00:38:19.5942712+03:00",
+    "SessionStolen": 4,
+    "SessionLost": 2,
     "Breaker": false
   },
   "kiir0yy": {
@@ -614,7 +614,7 @@
     "Stolen": 1,
     "Lost": 2,
     "Armor": false,
-    "LastRobbery": "2026-09-01T23:24:44.7300827+03:00",
+    "LastRobbery": "2026-09-02T01:00:22.9395596+03:00",
     "SessionStolen": 1,
     "SessionLost": 2,
     "Breaker": false
@@ -765,6 +765,66 @@
     "Lost": 0,
     "Armor": false,
     "LastRobbery": "2026-09-01T23:57:55.0458586+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
+    "Breaker": false
+  },
+  "rizhikchizhik": {
+    "Name": "rizhikchizhik",
+    "Stolen": 2,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-09-02T01:00:03.7392861+03:00",
+    "SessionStolen": 2,
+    "SessionLost": 0,
+    "Breaker": false
+  },
+  "micksmitte": {
+    "Name": "MickSmitte",
+    "Stolen": 0,
+    "Lost": 1,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 1,
+    "Breaker": false
+  },
+  "alexgoldfish": {
+    "Name": "AlexGoldFish",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "2026-09-02T00:39:22.5773102+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
+    "Breaker": false
+  },
+  "timmy_ignored": {
+    "Name": "timmy_ignored",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
+    "Breaker": false
+  },
+  "evnnomore": {
+    "Name": "Evnnomore",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": true,
+    "LastRobbery": "2026-09-02T01:00:12.4788621+03:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
+    "Breaker": true
+  },
+  "sborp78": {
+    "Name": "sborp78",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
     "SessionLost": 0,
     "Breaker": false
