@@ -24,7 +24,7 @@
     "Stolen": 6,
     "Lost": 7,
     "Armor": false,
-    "LastRobbery": "2026-08-30T21:44:28.4077491+03:00",
+    "LastRobbery": "2026-09-01T20:19:48.2869228+03:00",
     "SessionStolen": 0,
     "SessionLost": 0,
     "Breaker": false
@@ -144,7 +144,7 @@
     "Stolen": 9,
     "Lost": 8,
     "Armor": false,
-    "LastRobbery": "2026-09-01T19:26:18.3838766+03:00",
+    "LastRobbery": "2026-09-01T20:03:05.8795552+03:00",
     "SessionStolen": 3,
     "SessionLost": 0,
     "Breaker": true
@@ -461,11 +461,11 @@
   },
   "nentome": {
     "Name": "nentome",
-    "Stolen": 2,
+    "Stolen": 4,
     "Lost": 2,
     "Armor": false,
-    "LastRobbery": "2026-09-01T19:26:07.3460287+03:00",
-    "SessionStolen": 0,
+    "LastRobbery": "2026-09-01T20:23:34.7913395+03:00",
+    "SessionStolen": 2,
     "SessionLost": 0,
     "Breaker": false
   },
@@ -614,7 +614,7 @@
     "Stolen": 1,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-09-01T20:01:43.1415168+03:00",
+    "LastRobbery": "2026-09-01T20:20:09.1754203+03:00",
     "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
@@ -682,11 +682,11 @@
   "ruacter": {
     "Name": "ruActer",
     "Stolen": 0,
-    "Lost": 0,
+    "Lost": 1,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "lexus421991": {
@@ -697,6 +697,26 @@
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
     "SessionLost": 0,
+    "Breaker": false
+  },
+  "casspear": {
+    "Name": "casspear",
+    "Stolen": 0,
+    "Lost": 0,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 0,
+    "Breaker": false
+  },
+  "lexxkprod": {
+    "Name": "lexxkprod",
+    "Stolen": 0,
+    "Lost": 1,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 1,
     "Breaker": false
   }
 }
