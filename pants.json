@@ -4,7 +4,7 @@
     "Stolen": 24,
     "Lost": 12,
     "Armor": true,
-    "LastRobbery": "2026-09-01T20:34:59.3393697+03:00",
+    "LastRobbery": "2026-09-01T21:05:13.2543823+03:00",
     "SessionStolen": 0,
     "SessionLost": 1,
     "Breaker": true
@@ -61,11 +61,11 @@
   },
   "rewolucifer": {
     "Name": "rewolucifer",
-    "Stolen": 12,
+    "Stolen": 13,
     "Lost": 12,
     "Armor": true,
-    "LastRobbery": "2026-09-01T20:46:04.4822652+03:00",
-    "SessionStolen": 1,
+    "LastRobbery": "2026-09-01T21:05:31.8937866+03:00",
+    "SessionStolen": 2,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -304,7 +304,7 @@
     "Stolen": 1,
     "Lost": 1,
     "Armor": false,
-    "LastRobbery": "2026-08-30T16:01:05.5988928+03:00",
+    "LastRobbery": "2026-09-01T21:05:32.4215314+03:00",
     "SessionStolen": 0,
     "SessionLost": 0,
     "Breaker": false
@@ -747,6 +747,16 @@
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
     "SessionLost": 0,
+    "Breaker": false
+  },
+  "pantherosfeiticeira": {
+    "Name": "PantherosFeiticeira",
+    "Stolen": 0,
+    "Lost": 1,
+    "Armor": false,
+    "LastRobbery": "0001-01-01T00:00:00",
+    "SessionStolen": 0,
+    "SessionLost": 1,
     "Breaker": false
   }
 }
