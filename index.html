@@ -195,7 +195,7 @@
         .thief-row:hover .list-name { color: #00ff44; text-shadow: 0 0 10px rgba(0,255,68,0.8), 0 0 20px rgba(0,255,68,0.5); }
         .victim-row:hover .list-name { color: var(--accent-light); text-shadow: 0 0 10px rgba(254,0,0,0.8), 0 0 20px rgba(254,0,0,0.5); }
 
-        .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
+        .armor-icon, .breaker-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
 
       
         .list-score-box { 
@@ -345,7 +345,8 @@
                         username: data[key].Name || key, 
                         stolen: data[key].Stolen || 0,
                         lost: data[key].Lost || 0,
-                        armor: data[key].Armor || false
+                        armor: data[key].Armor || false,
+						breaker: data[key].Breaker || false
                     });
                 }
             }
@@ -403,7 +404,16 @@
             else if (rankNum === 2) rankClass = 'rank-2';
             else if (rankNum === 3) rankClass = 'rank-3';
 
-            const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
+           
+			const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
+			const breakerIcon = player.breaker ? `<span class="breaker-icon" title="Вооружен Алмазной Болгаркой!">🛠️</span>` : '';
+
+			
+			
+			
+			
+			
+			
             
             const rowClass = type === 'stolen' ? 'thief-row' : 'victim-row';
             let score = type === 'stolen' ? player.stolen : player.lost;
@@ -422,13 +432,14 @@
             item.innerHTML = `
                 <div class="list-rank ${rankClass}">${rankNum}</div>
                 <div class="list-avatar">${avatarHtml}</div>
-                
+                	
                 <div class="list-info">
                     <div class="list-name-row">
                         <a href="https://twitch.tv/${loginNick}" target="_blank" class="list-name-link" onclick="event.stopPropagation()">
                             <h3 class="list-name text-3d-effect" title="${originalNick}">${originalNick}</h3>
                         </a>
                         ${armorIcon}
+						${breakerIcon}
                     </div>
                 </div>
 
