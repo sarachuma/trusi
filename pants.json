@@ -21,11 +21,11 @@
   },
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
-    "Stolen": 6,
+    "Stolen": 7,
     "Lost": 7,
-    "Armor": true,
+    "Armor": false,
     "LastRobbery": "2026-09-01T22:08:53.0109514+03:00",
-    "SessionStolen": 0,
+    "SessionStolen": 1,
     "SessionLost": 0,
     "Breaker": false
   },
@@ -392,11 +392,11 @@
   "ogun173": {
     "Name": "Ogun173",
     "Stolen": 0,
-    "Lost": 1,
+    "Lost": 2,
     "Armor": false,
-    "LastRobbery": "0001-01-01T00:00:00",
+    "LastRobbery": "2026-09-01T22:50:10.8152183+03:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "trolleybus_govnayshka": {
@@ -462,11 +462,11 @@
   "nentome": {
     "Name": "nentome",
     "Stolen": 5,
-    "Lost": 2,
+    "Lost": 3,
     "Armor": false,
-    "LastRobbery": "2026-09-01T20:42:00.6215603+03:00",
+    "LastRobbery": "2026-09-01T22:49:32.4036384+03:00",
     "SessionStolen": 3,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "nerowearth": {
@@ -731,11 +731,11 @@
   },
   "wooden_mage": {
     "Name": "Wooden_Mage",
-    "Stolen": 0,
+    "Stolen": 1,
     "Lost": 1,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 0,
+    "SessionStolen": 1,
     "SessionLost": 1,
     "Breaker": false
   },
