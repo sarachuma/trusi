@@ -11,11 +11,11 @@
   },
   "sarachuma": {
     "Name": "sarachuma",
-    "Stolen": 13,
+    "Stolen": 14,
     "Lost": 22,
     "Armor": false,
-    "LastRobbery": "2026-09-01T22:24:30.0071773+03:00",
-    "SessionStolen": 2,
+    "LastRobbery": "2026-09-02T01:32:36.3497746+03:00",
+    "SessionStolen": 3,
     "SessionLost": 7,
     "Breaker": false
   },
@@ -212,11 +212,11 @@
   "͏": {
     "Name": "͏",
     "Stolen": 2,
-    "Lost": 9,
+    "Lost": 10,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
     "SessionStolen": 0,
-    "SessionLost": 2,
+    "SessionLost": 3,
     "Breaker": false
   },
   "johnathan_beast": {
