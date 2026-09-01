@@ -41,11 +41,11 @@
   },
   "unomirv_": {
     "Name": "unomirv_",
-    "Stolen": 22,
+    "Stolen": 23,
     "Lost": 19,
     "Armor": false,
-    "LastRobbery": "2026-09-01T19:26:37.6392349+03:00",
-    "SessionStolen": 2,
+    "LastRobbery": "2026-09-01T23:26:13.8054883+03:00",
+    "SessionStolen": 3,
     "SessionLost": 2,
     "Breaker": false
   },
@@ -61,11 +61,11 @@
   },
   "rewolucifer": {
     "Name": "rewolucifer",
-    "Stolen": 14,
+    "Stolen": 16,
     "Lost": 12,
     "Armor": false,
-    "LastRobbery": "2026-09-01T21:39:12.6879428+03:00",
-    "SessionStolen": 3,
+    "LastRobbery": "2026-09-01T23:30:35.7003405+03:00",
+    "SessionStolen": 5,
     "SessionLost": 1,
     "Breaker": false
   },
@@ -232,11 +232,11 @@
   "vetalsmith3": {
     "Name": "vetalsmith3",
     "Stolen": 1,
-    "Lost": 0,
+    "Lost": 1,
     "Armor": false,
     "LastRobbery": "2026-08-28T17:55:59.4255894+03:00",
     "SessionStolen": 0,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "cybercat26v": {
@@ -612,11 +612,11 @@
   "pel1mew1k": {
     "Name": "pel1mew1k",
     "Stolen": 1,
-    "Lost": 1,
+    "Lost": 2,
     "Armor": false,
-    "LastRobbery": "2026-09-01T20:35:31.361247+03:00",
+    "LastRobbery": "2026-09-01T23:24:44.7300827+03:00",
     "SessionStolen": 1,
-    "SessionLost": 1,
+    "SessionLost": 2,
     "Breaker": false
   },
   "kri_ans": {
@@ -731,12 +731,12 @@
   },
   "wooden_mage": {
     "Name": "Wooden_Mage",
-    "Stolen": 1,
-    "Lost": 1,
+    "Stolen": 2,
+    "Lost": 3,
     "Armor": false,
     "LastRobbery": "0001-01-01T00:00:00",
-    "SessionStolen": 1,
-    "SessionLost": 1,
+    "SessionStolen": 2,
+    "SessionLost": 3,
     "Breaker": false
   },
   "chernigor": {
