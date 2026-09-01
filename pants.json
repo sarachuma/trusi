@@ -22,11 +22,11 @@
   "fall3n_ang3i": {
     "Name": "fall3n_ang3I",
     "Stolen": 7,
-    "Lost": 7,
+    "Lost": 8,
     "Armor": false,
-    "LastRobbery": "2026-09-01T22:08:53.0109514+03:00",
+    "LastRobbery": "2026-09-02T00:08:55.4484892+03:00",
     "SessionStolen": 1,
-    "SessionLost": 0,
+    "SessionLost": 1,
     "Breaker": false
   },
   "mellorian": {
@@ -61,11 +61,11 @@
   },
   "rewolucifer": {
     "Name": "rewolucifer",
-    "Stolen": 16,
+    "Stolen": 17,
     "Lost": 13,
     "Armor": true,
     "LastRobbery": "2026-09-01T23:55:18.8017995+03:00",
-    "SessionStolen": 5,
+    "SessionStolen": 6,
     "SessionLost": 2,
     "Breaker": false
   },
