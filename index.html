@@ -402,22 +402,24 @@
             let avatarMap = {};
 
             if (uniqueUsers.length > 0) {
-                try {
-					// Формируем правильную строку: login=user1&login=user2&login=user3
-					const loginQuery = uniqueUsers.map(u => `login=${encodeURIComponent(u)}`).join('&');
-					
-					// Подставляем её в URL (обрати внимание, что login= уже есть внутри loginQuery)
-					const res = await fetch(`https://api.ivr.fi/v2/twitch/user?${loginQuery}`);
-					
-					if (res.ok) {
-                        const avatarData = await res.json();
-                        avatarData.forEach(u => {
-                            if (u.logo) avatarMap[u.login.toLowerCase()] = u.logo;
-                        });
+                // Создаем массив промисов, где каждый запрашивает одного юзера (как в твоей афише)
+                const fetchPromises = uniqueUsers.map(async (userLogin) => {
+                    try {
+                        const res = await fetch(`https://api.ivr.fi/v2/twitch/user?login=${userLogin}`);
+                        if (res.ok) {
+                            const data = await res.json();
+                            // API ivr.fi возвращает массив с 1 элементом для конкретного юзера
+                            if (data && data.length > 0 && data[0].logo) {
+                                avatarMap[userLogin] = data[0].logo.replace('300x300', '150x150'); // Сразу ужимаем картинку для скорости
+                            }
+                        }
+                    } catch (e) {
+                        console.warn(`Не удалось загрузить аватарку для ${userLogin}`, e);
                     }
-                } catch (e) {
-                    console.warn("Не удалось загрузить аватарки с Twitch", e);
-                }
+                });
+
+                // Ждем выполнения ВСЕХ запросов параллельно
+                await Promise.all(fetchPromises);
             }
 
             renderList('thieves-list', thieves, 'stolen', avatarMap);
