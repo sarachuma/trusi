@@ -402,15 +402,15 @@
             let avatarMap = {};
 
             if (uniqueUsers.length > 0) {
-                // Создаем массив промисов, где каждый запрашивает одного юзера (как в твоей афише)
+                
                 const fetchPromises = uniqueUsers.map(async (userLogin) => {
                     try {
                         const res = await fetch(`https://api.ivr.fi/v2/twitch/user?login=${userLogin}`);
                         if (res.ok) {
                             const data = await res.json();
-                            // API ivr.fi возвращает массив с 1 элементом для конкретного юзера
+                            
                             if (data && data.length > 0 && data[0].logo) {
-                                avatarMap[userLogin] = data[0].logo.replace('300x300', '150x150'); // Сразу ужимаем картинку для скорости
+                                avatarMap[userLogin] = data[0].logo.replace('300x300', '150x150'); 
                             }
                         }
                     } catch (e) {
@@ -418,7 +418,7 @@
                     }
                 });
 
-                // Ждем выполнения ВСЕХ запросов параллельно
+                
                 await Promise.all(fetchPromises);
             }
 
