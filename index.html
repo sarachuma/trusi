@@ -125,7 +125,7 @@
         }
 
         .col-title {
-            text-align: center; font-family: var(--font-title); font-size: 30px; font-weight: 900;
+            text-align: center; font-family: var(--font-title); font-size: 32px; font-weight: 900;
             text-transform: uppercase; margin-top: 0; margin-bottom: 25px; letter-spacing: 1px;
             padding-bottom: 15px; border-bottom: 2px dashed rgba(254, 0, 0, 0.3);
         }
@@ -137,7 +137,7 @@
         .list-item {
             display: flex; align-items: center;
             background: var(--bg-velvet); border: 2px solid var(--accent-dark); border-radius: 4px;
-            padding: 10px 16px; margin-bottom: 15px;
+            padding: 12px 20px; margin-bottom: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.6); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer; position: relative;
         }
@@ -153,9 +153,9 @@
         }
 
         .list-rank {
-            width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+            width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
             display: flex; align-items: center; justify-content: center;
-            font-family: var(--font-title); font-size: 15px; font-weight: 900; margin-right: 12px;
+            font-family: var(--font-title); font-size: 18px; font-weight: 900; margin-right: 15px;
             border: 2px solid var(--accent-dark); background: var(--bg-deep); color: var(--text-main);
             box-shadow: inset 0 0 10px rgba(0,0,0,0.8); z-index: 11;
         }
@@ -164,108 +164,33 @@
         .rank-3 { background: var(--bronze); color: #130f1c; border-color: #fff; box-shadow: 0 0 15px var(--bronze); text-shadow: none; }
 
         .list-avatar {
-            width: 38px; height: 38px; border-radius: 4px; flex-shrink: 0;
+            width: 44px; height: 44px; border-radius: 4px; flex-shrink: 0;
             background: var(--bg-deep); border: 2px solid var(--accent-main);
-            display: flex; align-items: center; justify-content: center; overflow: hidden;
-            font-family: var(--font-title); font-size: 18px; font-weight: 900;
-            color: #ffffff; margin-right: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); z-index: 11;
-        }
-        
-        .list-avatar img { width: 100%; height: 100%; object-fit: cover; }
-
-        .list-info { flex-grow: 1; display: flex; flex-direction: column; overflow: visible; z-index: 11; padding-right: 10px; min-width: 0; }
-        
-        .list-name-row { display: flex; align-items: center; gap: 8px; width: 100%; }
-        
-        .list-name-link {
-            text-decoration: none; color: inherit; display: block; 
-            max-width: calc(100% - 25px); 
-            /* ИСПРАВЛЕНИЕ ТЕНИ ВО ВСЕ 4 СТОРОНЫ */
-            overflow: hidden; 
-            padding: 20px 15px; 
-            margin: -20px -15px;
-        }
-        
-        .list-name { 
-            font-family: var(--font-title); font-size: 21px; font-weight: 900; color: #fff; 
-            white-space: nowrap; overflow: visible; 
-            letter-spacing: 1px; margin: 0; line-height: 1.1; transition: color 0.2s, text-shadow 0.2s;
-        }
-
-        .thief-row:hover .list-name { color: #00ff44; text-shadow: 0 0 10px rgba(0,255,68,0.8), 0 0 20px rgba(0,255,68,0.5); }
-        .victim-row:hover .list-name { color: var(--accent-light); text-shadow: 0 0 10px rgba(254,0,0,0.8), 0 0 20px rgba(254,0,0,0.5); }
-
-        .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
-
-        /* ================= 3D БЛОКИ ДЛЯ ЦИФР ================= */
-        .list-score-box { 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            z-index: 11; width: 115px; flex-shrink: 0; 
-        }
-        
-        .score-3d-wrapper {
-            background: rgba(3, 6, 36, 0.95);
-            border: 2px solid;
-            border-bottom-width: 4px; 
-            border-radius: 6px;
-            padding: 4px 0;
-            box-shadow: 0 8px 15px rgba(0,0,0,0.8), inset 0 2px 5px rgba(0,0,0,0.5); 
             display: flex; align-items: center; justify-content: center;
-            margin-bottom: 8px; 
-            width: 85px; 
-            box-sizing: border-box;
-            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-            position: relative;
-            z-index: 10;
+            font-family: var(--font-title); font-size: 22px; font-weight: 900;
+            color: #ffffff; margin-right: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); z-index: 11;
         }
 
-        .thief-row .score-3d-wrapper { border-color: #00661b; border-bottom-color: #00ff44; }
-        .thief-row:hover .score-3d-wrapper {
-            transform: translateY(-3px); border-color: #00ff44;
-            box-shadow: 0 12px 20px rgba(0,0,0,0.9), 0 5px 15px rgba(0,255,68,0.3), inset 0 2px 5px rgba(0,0,0,0.5);
-        }
-
-        .victim-row .score-3d-wrapper { border-color: var(--accent-dark); border-bottom-color: var(--accent-main); }
-        .victim-row:hover .score-3d-wrapper {
-            transform: translateY(-3px); border-color: var(--accent-main);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.9), 0 5px 15px rgba(254,0,0,0.4), inset 0 2px 5px rgba(0,0,0,0.5);
-        }
-
-        .list-score { font-family: var(--font-title); font-size: 26px; font-weight: 900; line-height: 1; color: #ffffff; }
-        .score-green { text-shadow: 2px 2px 0px #00661b, 0 0 15px rgba(0,255,68,0.8), 0 0 5px rgba(0,255,68,1); }
-        .score-red { text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px rgba(255,77,77,0.8), 0 0 5px rgba(255,77,77,1); }
-
-        .list-score-label { 
-            font-size: 9.5px; 
-            font-family: var(--font-title); 
-            color: #ffffff; 
-            text-transform: uppercase; 
-            letter-spacing: 0.5px; 
-            font-weight: 900; 
-            text-align: center;
-            background: rgba(3, 6, 36, 0.95); 
-            border: 1px solid;
-            border-bottom-width: 2px;
-            border-radius: 4px;
-            padding: 4px 6px;
-            width: 100%;
-            box-sizing: border-box;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.8);
-            position: relative;
-            z-index: 12;
-        }
-
-        .thief-row .list-score-label {
-            border-color: rgba(0,255,68,0.3); border-bottom-color: #00661b; text-shadow: 1px 1px 0px #00661b;
-        }
+        .list-info { flex-grow: 1; display: flex; flex-direction: column; overflow: hidden; z-index: 11; }
         
-        .victim-row .list-score-label {
-            border-color: rgba(254,0,0,0.3); border-bottom-color: var(--accent-dark); text-shadow: 1px 1px 0px var(--accent-dark);
+        .list-name-row { display: flex; align-items: center; gap: 8px; }
+        .list-name { 
+            font-family: var(--font-title); font-size: 24px; font-weight: 900; color: #fff; 
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; 
+            letter-spacing: 1px; margin: 0; line-height: 1.1;
         }
+        .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); }
+
+        .list-score-box { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; z-index: 11; }
+        .list-score { font-family: var(--font-title); font-size: 36px; font-weight: 900; line-height: 1; }
+        .list-score-label { font-size: 11px; font-family: var(--font-title); color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-weight: 800; margin-top: 4px; }
+        
+        .score-green { color: #00ff44; text-shadow: 2px 2px 0px #00661b, 0 0 15px rgba(0,255,68,0.5); }
+        .score-red { color: var(--accent-light); text-shadow: 2px 2px 0px var(--accent-dark), 0 0 15px rgba(255,77,77,0.5); }
 
         .text-3d-effect { color: #ffffff; text-shadow: 2px 2px 0px var(--accent-dark), 0 0 10px rgba(254, 0, 0, 0.8); }
 
-        .empty-state { text-align: center; padding: 40px 20px; font-family: var(--font-title); font-size: 18px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; border: 2px dashed rgba(254,0,0,0.2); border-radius: 4px; }
+        .empty-state { text-align: center; padding: 40px 20px; font-family: var(--font-title); font-size: 20px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; border: 2px dashed rgba(254,0,0,0.2); border-radius: 4px; }
 
         @media (max-width: 900px) { 
             .leaderboard-container { grid-template-columns: 1fr; padding: 20px; gap: 30px; } 
@@ -318,20 +243,6 @@
 <script>
     function getInitials(name) { return (name || '?').replace('@', '').trim().substring(0, 1).toUpperCase(); }
 
-    function autoResizeNames() {
-        document.querySelectorAll('.list-name').forEach(nameEl => {
-            let currentSize = 21; 
-            nameEl.style.fontSize = currentSize + 'px';
-            
-            while (nameEl.scrollWidth > nameEl.clientWidth && currentSize > 10) {
-                currentSize -= 0.5;
-                nameEl.style.fontSize = currentSize + 'px';
-            }
-        });
-    }
-
-    window.addEventListener('resize', autoResizeNames);
-
     async function loadData() {
         try {
             const response = await fetch('pants.json?t=' + new Date().getTime()); 
@@ -342,7 +253,7 @@
             for (const key in data) {
                 if (data.hasOwnProperty(key)) {
                     players.push({
-                        username: data[key].Name || key, 
+                        username: data[key].Name || key,
                         stolen: data[key].Stolen || 0,
                         lost: data[key].Lost || 0,
                         armor: data[key].Armor || false
@@ -350,33 +261,14 @@
                 }
             }
             
+            // Фильтруем и сортируем ТОП 10 Воров (у кого stolen > 0)
             const thieves = players.filter(p => p.stolen > 0).sort((a, b) => b.stolen - a.stolen).slice(0, 10);
+            
+            // Фильтруем и сортируем ТОП 10 Жертв (у кого lost > 0)
             const victims = players.filter(p => p.lost > 0).sort((a, b) => b.lost - a.lost).slice(0, 10);
 
-            const allUsers = [...thieves, ...victims].map(p => p.username.toLowerCase().replace('@', ''));
-            const uniqueUsers = [...new Set(allUsers)];
-            
-            let avatarMap = {};
-
-            if (uniqueUsers.length > 0) {
-                try {
-                    const loginQuery = uniqueUsers.join(',');
-                    const res = await fetch(`https://api.ivr.fi/v2/twitch/user?login=${loginQuery}`);
-                    if (res.ok) {
-                        const avatarData = await res.json();
-                        avatarData.forEach(u => {
-                            if (u.logo) avatarMap[u.login.toLowerCase()] = u.logo;
-                        });
-                    }
-                } catch (e) {
-                    console.warn("Не удалось загрузить аватарки с Twitch", e);
-                }
-            }
-
-            renderList('thieves-list', thieves, 'stolen', avatarMap);
-            renderList('victims-list', victims, 'lost', avatarMap);
-            
-            setTimeout(autoResizeNames, 50);
+            renderList('thieves-list', thieves, 'stolen');
+            renderList('victims-list', victims, 'lost');
 
         } catch (error) {
             document.getElementById('thieves-list').innerHTML = `<div class="empty-state">Ошибка загрузки базы</div>`;
@@ -384,7 +276,7 @@
         }
     }
 
-    function renderList(containerId, list, type, avatarMap) {
+    function renderList(containerId, list, type) {
         const container = document.getElementById(containerId);
         container.innerHTML = '';
 
@@ -394,9 +286,9 @@
         }
 
         list.forEach((player, index) => {
-            const originalNick = player.username; 
-            const loginNick = originalNick.toLowerCase().replace('@', ''); 
+            const cleanNick = player.username;
             
+            // Медали
             let rankClass = '';
             let rankNum = index + 1;
             if (rankNum === 1) rankClass = 'rank-1';
@@ -405,38 +297,29 @@
 
             const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
             
-            const rowClass = type === 'stolen' ? 'thief-row' : 'victim-row';
+            // В зависимости от колонки берем нужную цифру и цвет
             let score = type === 'stolen' ? player.stolen : player.lost;
             let scoreClass = type === 'stolen' ? 'score-green' : 'score-red';
             let scoreLabel = type === 'stolen' ? 'Трусов украл' : 'Трусов потерял';
 
-            const avatarUrl = avatarMap[loginNick];
-            const avatarHtml = avatarUrl 
-                ? `<img src="${avatarUrl}" alt="${originalNick}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">${getInitials(originalNick)}</div>`
-                : getInitials(originalNick);
-
             const item = document.createElement('div');
-            item.className = `list-item ${rowClass}`;
-            item.onclick = () => window.open(`https://twitch.tv/${loginNick}`, '_blank');
+            item.className = 'list-item';
+            item.onclick = () => window.open(`https://twitch.tv/${cleanNick.replace('@', '')}`, '_blank');
             
             item.innerHTML = `
                 <div class="list-rank ${rankClass}">${rankNum}</div>
-                <div class="list-avatar">${avatarHtml}</div>
+                <div class="list-avatar">${getInitials(cleanNick)}</div>
                 
                 <div class="list-info">
                     <div class="list-name-row">
-                        <a href="https://twitch.tv/${loginNick}" target="_blank" class="list-name-link" onclick="event.stopPropagation()">
-                            <h3 class="list-name text-3d-effect" title="${originalNick}">${originalNick}</h3>
-                        </a>
+                        <h3 class="list-name text-3d-effect" title="${cleanNick}">${cleanNick}</h3>
                         ${armorIcon}
                     </div>
                 </div>
 
                 <div class="list-score-box">
-                    <div class="score-3d-wrapper">
-                        <span class="list-score ${scoreClass}">${score}</span>
-                    </div>
-                    <div class="list-score-label">${scoreLabel}</div>
+                    <span class="list-score ${scoreClass}">${score}</span>
+                    <span class="list-score-label">${scoreLabel}</span>
                 </div>
             `;
             container.appendChild(item);
