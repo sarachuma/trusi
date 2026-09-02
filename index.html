@@ -43,10 +43,6 @@
             --font-title: 'Geologica Local', 'Geologica', sans-serif;
             --font-text: 'Geologica Local', 'Geologica', sans-serif;
         }
-		
-		* {
-			box-sizing: border-box;
-		}
 
         body::before {
             content: "";
@@ -122,12 +118,11 @@
 
        
         .leaderboard-container {
-			display: grid;
-			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); /* Заперли сетку */
-			gap: 40px;
-			padding: 40px;
-			width: 100%;
-		}
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
 
         .col-title {
             text-align: center; font-family: var(--font-title); font-size: 30px; font-weight: 900;
@@ -200,7 +195,7 @@
         .thief-row:hover .list-name { color: #00ff44; text-shadow: 0 0 10px rgba(0,255,68,0.8), 0 0 20px rgba(0,255,68,0.5); }
         .victim-row:hover .list-name { color: var(--accent-light); text-shadow: 0 0 10px rgba(254,0,0,0.8), 0 0 20px rgba(254,0,0,0.5); }
 
-        .armor-icon, .breaker-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
+        .armor-icon { font-size: 16px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); flex-shrink: 0; }
 
       
         .list-score-box { 
@@ -273,49 +268,12 @@
         .empty-state { text-align: center; padding: 40px 20px; font-family: var(--font-title); font-size: 18px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; border: 2px dashed rgba(254,0,0,0.2); border-radius: 4px; }
 
         @media (max-width: 900px) { 
-			body {
-				padding: 20px 10px; /* Убираем огромные поля на телефонах */
-			}
-			.leaderboard-container { 
-				grid-template-columns: minmax(0, 1fr); /* Заперли сетку для мобилок */
-				padding: 15px; 
-				gap: 20px; 
-			} 
-			.header-top h1 { font-size: 36px; }
-			.header-top h1::before, .header-top h1::after { display: none; }
-			.back-btn { position: relative; top: 0; left: 0; margin-bottom: 20px; }
-			.list-item:hover { transform: translateX(5px); }
-		}
-		
-		@media (max-width: 600px) {
-            body { padding: 10px; }
-            .container { min-height: auto; }
-            .header { padding: 20px 10px 15px; }
-            .header-top h1 { font-size: 28px; }
-            
-            .leaderboard-container { padding: 10px; gap: 20px; }
-            .col-title { font-size: 22px; margin-bottom: 15px; padding-bottom: 10px; }
-
-            .list-item { padding: 8px 10px; }
-            
-            /* Уменьшаем ранги и аватарки */
-            .list-rank { width: 26px; height: 26px; font-size: 13px; margin-right: 8px; }
-            .list-avatar { width: 32px; height: 32px; margin-right: 8px; }
-            
-            /* Ужимаем кликабельную зону ника, чтобы не съедала место */
-            .list-name-link { padding: 10px 5px; margin: -10px -5px; max-width: calc(100% - 15px); }
-            
-            /* Уменьшаем блок со счетом */
-            .list-score-box { width: 85px; }
-            .score-3d-wrapper { width: 65px; padding: 2px 0; margin-bottom: 5px; }
-            .list-score { font-size: 20px; }
-            .list-score-label { font-size: 8px; padding: 2px 4px; }
-            
-            /* Чуть уменьшаем иконки брони и болгарки */
-            .armor-icon, .breaker-icon { font-size: 14px; gap: 4px; }
+            .leaderboard-container { grid-template-columns: 1fr; padding: 20px; gap: 30px; } 
+            .header-top h1 { font-size: 36px; }
+            .header-top h1::before, .header-top h1::after { display: none; }
+            .back-btn { position: relative; top: 0; left: 0; margin-bottom: 20px; }
+            .list-item:hover { transform: translateX(5px); }
         }
-		
-		
     </style>
 </head>
 <body>
@@ -387,8 +345,7 @@
                         username: data[key].Name || key, 
                         stolen: data[key].Stolen || 0,
                         lost: data[key].Lost || 0,
-                        armor: data[key].Armor || false,
-						breaker: data[key].Breaker || false
+                        armor: data[key].Armor || false
                     });
                 }
             }
@@ -446,9 +403,7 @@
             else if (rankNum === 2) rankClass = 'rank-2';
             else if (rankNum === 3) rankClass = 'rank-3';
 
-           
-			const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
-			const breakerIcon = player.breaker ? `<span class="breaker-icon" title="Вооружен Алмазной Болгаркой!">🛠️</span>` : '';
+            const armorIcon = player.armor ? `<span class="armor-icon" title="Надеты Железные Трусы!">🛡️</span>` : '';
             
             const rowClass = type === 'stolen' ? 'thief-row' : 'victim-row';
             let score = type === 'stolen' ? player.stolen : player.lost;
@@ -467,14 +422,13 @@
             item.innerHTML = `
                 <div class="list-rank ${rankClass}">${rankNum}</div>
                 <div class="list-avatar">${avatarHtml}</div>
-                	
+                
                 <div class="list-info">
                     <div class="list-name-row">
                         <a href="https://twitch.tv/${loginNick}" target="_blank" class="list-name-link" onclick="event.stopPropagation()">
                             <h3 class="list-name text-3d-effect" title="${originalNick}">${originalNick}</h3>
                         </a>
                         ${armorIcon}
-						${breakerIcon}
                     </div>
                 </div>
 
